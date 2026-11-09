@@ -1,0 +1,45 @@
+{
+  "participant_column": "Participant_ID",
+  "visits": {
+    "T0": {
+      "timepoint_id": 0,
+      "metadata": {
+        "path": "RESTRICTED/T0_metadata.parquet",
+        "columns": {
+          "source_id": "Participant_ID",
+          "source_sex": "Sex",
+          "source_age": "Age",
+          "source_disease": "Disease",
+          "source_healthy": "is_healthy"
+        }
+      },
+      "organ_tables": {
+        "Body": {
+          "path": "RESTRICTED/T0_body.parquet",
+          "columns": {"source_id": "Participant_ID"},
+          "keep": ["Body_measurement_001"]
+        }
+      }
+    },
+    "T2": {
+      "timepoint_id": 1,
+      "metadata": {
+        "path": "RESTRICTED/T2_metadata.parquet",
+        "columns": {
+          "source_id": "Participant_ID",
+          "source_sex": "Sex",
+          "source_age": "Age",
+          "source_disease": "Disease",
+          "source_healthy": "is_healthy"
+        }
+      },
+      "organ_tables": {
+        "Brain": {
+          "path": "RESTRICTED/T2_brain.parquet",
+          "columns": {"source_id": "Participant_ID"},
+          "keep": ["Brain_measurement_001"]
+        }
+      }
+    }
+  }
+}

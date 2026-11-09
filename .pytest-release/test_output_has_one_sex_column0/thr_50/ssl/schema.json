@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "organ_names": [
+    "Body",
+    "Brain"
+  ],
+  "measurement_feature_columns": [
+    "b1",
+    "b2",
+    "r1",
+    "r2"
+  ],
+  "feature_columns": [
+    "__model_Body_Sex",
+    "b1",
+    "b2",
+    "__model_Brain_Sex",
+    "r1",
+    "r2"
+  ],
+  "organ_feature_map": {
+    "Body": [
+      "__model_Body_Sex",
+      "b1",
+      "b2"
+    ],
+    "Brain": [
+      "__model_Brain_Sex",
+      "r1",
+      "r2"
+    ]
+  },
+  "organ_feature_map_excluding_sex": {
+    "Body": [
+      "b1",
+      "b2"
+    ],
+    "Brain": [
+      "r1",
+      "r2"
+    ]
+  },
+  "organ_offsets": {
+    "Body": [
+      0,
+      3
+    ],
+    "Brain": [
+      3,
+      6
+    ]
+  },
+  "n_features_per_organ": {
+    "Body": 3,
+    "Brain": 3
+  },
+  "n_features_per_organ_excluding_sex": {
+    "Body": 2,
+    "Brain": 2
+  },
+  "n_measurement_features": 4,
+  "n_total_features": 6,
+  "sex_source_column": "Sex",
+  "sex_column_per_organ": {
+    "Body": "__model_Body_Sex",
+    "Brain": "__model_Brain_Sex"
+  },
+  "sex_column_indices_per_organ": {
+    "Body": 0,
+    "Brain": 3
+  },
+  "metadata_columns": [
+    "Participant_ID",
+    "Sex",
+    "timepoint",
+    "timepoint_id",
+    "Age",
+    "Disease",
+    "is_healthy"
+  ],
+  "timepoint_id_map": {
+    "T0": 0,
+    "T2": 1
+  },
+  "n_timepoints": 2,
+  "organ_timepoint_availability": {
+    "Body": [
+      "T0",
+      "T2"
+    ],
+    "Brain": [
+      "T0",
+      "T2"
+    ]
+  },
+  "filter_thresholds": {
+    "ssl": {
+      "organ_presence_threshold": 0.3,
+      "max_missing_fraction": 0.5,
+      "min_organs": 2,
+      "presence_excludes_sex": true
+    },
+    "finetune": {
+      "organ_presence_threshold": 0.5,
+      "max_missing_fraction": 0.5,
+      "min_organs": 2,
+      "presence_excludes_sex": true,
+      "healthy_only": true
+    }
+  },
+  "per_organ_effective_samples": {
+    "ssl": {
+      "Body": 2,
+      "Brain": 2
+    },
+    "finetune": {
+      "Body": 1,
+      "Brain": 1
+    }
+  },
+  "notes": {
+    "visit_representation": "T0 and T2 are independent sample rows.",
+    "sex_representation": "One sample-level Sex field is broadcast internally to organ blocks; broadcast columns are implementation slots, not independent features.",
+    "threshold_distinction": "max_missing_fraction defines the five preprocessing datasets; organ_presence_threshold is the fixed observed-feature ratio used inside the original SSL or fine-tuning loader."
+  }
+}

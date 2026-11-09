@@ -1,0 +1,12 @@
+{
+  "Body": ["Body_measurement_001"],
+  "Hepatic": ["Hepatic_measurement_001"],
+  "Immune": ["Immune_measurement_001"],
+  "Lungs": ["Lungs_measurement_001"],
+  "Metabolic": ["Metabolic_measurement_001"],
+  "Renal": ["Renal_measurement_001"],
+  "Brain": ["Brain_measurement_001"],
+  "Cardiovascular": ["Cardiovascular_measurement_001"],
+  "Cognitive": ["Cognitive_measurement_001"],
+  "Mental": ["Mental_measurement_001"]
+}

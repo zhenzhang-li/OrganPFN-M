@@ -1,0 +1,19 @@
+{
+  "threshold": 70,
+  "n_input_rows": 164,
+  "n_retained_rows": 164,
+  "n_ssl_rows": 164,
+  "n_finetune_rows": 56,
+  "per_organ_present": {
+    "Body": 151,
+    "Hepatic": 141,
+    "Immune": 143,
+    "Lungs": 146,
+    "Metabolic": 145,
+    "Renal": 137,
+    "Brain": 151,
+    "Cardiovascular": 143,
+    "Cognitive": 140,
+    "Mental": 155
+  }
+}

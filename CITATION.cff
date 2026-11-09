@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the associated OrganPFN-M article and this software release."
+title: "OrganPFN-M: multiorgan age prediction and downstream analysis code"
+type: software
+authors:
+  - name: "OrganPFN-M study investigators"
+version: 1.0.0
+date-released: 2026-08-15
+repository-code: "https://github.com/REPLACE-WITH-OWNER/REPLACE-WITH-REPOSITORY"

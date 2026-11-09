@@ -1,0 +1,11 @@
+{
+  "threshold": 50,
+  "n_input_rows": 3,
+  "n_retained_rows": 2,
+  "n_ssl_rows": 2,
+  "n_finetune_rows": 1,
+  "per_organ_present": {
+    "Body": 2,
+    "Brain": 2
+  }
+}

@@ -1,0 +1,2 @@
+Participant_ID,Sex,timepoint,timepoint_id,Age,Disease,is_healthy,b1,b2,r1,r2
+p1,F,T0,0,50.0,healthy,1,1.0,2.0,3.0,4.0

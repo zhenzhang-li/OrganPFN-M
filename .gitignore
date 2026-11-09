@@ -1,0 +1,34 @@
+# Restricted and generated material
+data/raw/
+data/processed/
+checkpoints/
+outputs/
+results/
+*.pt
+*.pth
+*.ckpt
+*.parquet
+*.feather
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

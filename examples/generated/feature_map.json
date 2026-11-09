@@ -1,0 +1,52 @@
+{
+  "Body": [
+    "Body_measurement_001",
+    "Body_measurement_002",
+    "Body_measurement_003"
+  ],
+  "Hepatic": [
+    "Hepatic_measurement_001",
+    "Hepatic_measurement_002",
+    "Hepatic_measurement_003"
+  ],
+  "Immune": [
+    "Immune_measurement_001",
+    "Immune_measurement_002",
+    "Immune_measurement_003"
+  ],
+  "Lungs": [
+    "Lungs_measurement_001",
+    "Lungs_measurement_002",
+    "Lungs_measurement_003"
+  ],
+  "Metabolic": [
+    "Metabolic_measurement_001",
+    "Metabolic_measurement_002",
+    "Metabolic_measurement_003"
+  ],
+  "Renal": [
+    "Renal_measurement_001",
+    "Renal_measurement_002",
+    "Renal_measurement_003"
+  ],
+  "Brain": [
+    "Brain_measurement_001",
+    "Brain_measurement_002",
+    "Brain_measurement_003"
+  ],
+  "Cardiovascular": [
+    "Cardiovascular_measurement_001",
+    "Cardiovascular_measurement_002",
+    "Cardiovascular_measurement_003"
+  ],
+  "Cognitive": [
+    "Cognitive_measurement_001",
+    "Cognitive_measurement_002",
+    "Cognitive_measurement_003"
+  ],
+  "Mental": [
+    "Mental_measurement_001",
+    "Mental_measurement_002",
+    "Mental_measurement_003"
+  ]
+}

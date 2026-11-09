@@ -1,0 +1,46 @@
+{
+  "seed": 20260512,
+  "data_missingness_thresholds_percent": [0, 30, 50, 70, 90],
+  "minimum_organs_per_sample": 2,
+  "self_supervision": {
+    "samples": "all retained samples",
+    "normalization_reference": "healthy samples across T0 and T2",
+    "batch_size": 64,
+    "peak_learning_rate": 0.0003,
+    "weight_decay": 0.05,
+    "warmup_steps": 500,
+    "gradient_clip_norm": 1.0,
+    "stages": [
+      {"name": "warmup", "epochs": 1, "cell_mask_ratio": 0.05, "organ_drop_range": [0, 0]},
+      {"name": "main", "epochs": 15, "cell_mask_ratio": 0.15, "organ_drop_range": [1, 4]},
+      {"name": "hard", "epochs": 5, "cell_mask_ratio": 0.30, "organ_drop_range": [1, 6]}
+    ],
+    "loss_weights": {"cell": 1.0, "mask": 0.3, "organ": 1.0, "contrastive": 0.1},
+    "linear_probe_every_epochs": 2
+  },
+  "fine_tuning": {
+    "samples": "healthy only",
+    "normalization": "fixed values loaded from the SSL checkpoint",
+    "cross_validation_folds": 5,
+    "batch_size": 32,
+    "epochs": 50,
+    "early_stopping_patience": 10,
+    "learning_rates": {
+      "backbone_early": 0.00001,
+      "backbone_late": 0.00005,
+      "backbone_top": 0.0002,
+      "heads": 0.001
+    },
+    "asymmetric_huber": {
+      "lambda": 3.0,
+      "lower_age_anchor": "organ-specific healthy median",
+      "upper_age_anchor": "organ-specific healthy 95th percentile",
+      "maximum_underprediction_multiplier": 4.0
+    }
+  },
+  "primary_analysis": {
+    "ssl_threshold_percent": 90,
+    "fine_tuning_threshold_percent": 30,
+    "fine_tuning_fold_zero_based": 4
+  }
+}

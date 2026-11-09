@@ -1,0 +1,20 @@
+{
+  "pioaa": {
+    "minimum_observed_organs": 2,
+    "minimum_pairwise_healthy_n": 30,
+    "correlation_shrinkage": 0.10,
+    "correlation_eigenvalue_floor": 0.0001,
+    "minimum_panel_size_calibration_n": 50
+  },
+  "cascade": {
+    "fdr": 0.05,
+    "minimum_incident_events_o2d": 300,
+    "minimum_prevalent_cases_d2o": 200,
+    "minimum_paired_visits_o2o": 1000,
+    "o2o_bootstrap_replicates": 200,
+    "o2o_bootstrap_seed": 20260701,
+    "minimum_directional_pairs_d2d": 100,
+    "minimum_onset_separation_years_d2d": 0.5,
+    "minimum_direction_fraction_d2d": 0.55
+  }
+}

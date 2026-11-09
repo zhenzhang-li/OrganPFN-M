@@ -1,0 +1,6 @@
+{
+  "O2D": {"minimum_count": 300, "effect_floor": 1.0, "direction": "greater"},
+  "D2O": {"minimum_count": 200, "effect_floor": 0.0, "direction": "greater"},
+  "D2D": {"minimum_count": 100, "effect_floor": 0.568, "direction": "greater"},
+  "O2O": {"minimum_count": 1000, "effect_floor": 0.0, "direction": "greater"}
+}

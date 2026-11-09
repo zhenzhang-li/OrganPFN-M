@@ -1,0 +1,398 @@
+{
+  "schema_version": "1.0",
+  "organ_names": [
+    "Body",
+    "Hepatic",
+    "Immune",
+    "Lungs",
+    "Metabolic",
+    "Renal",
+    "Brain",
+    "Cardiovascular",
+    "Cognitive",
+    "Mental"
+  ],
+  "measurement_feature_columns": [
+    "Body_measurement_001",
+    "Body_measurement_002",
+    "Body_measurement_003",
+    "Hepatic_measurement_001",
+    "Hepatic_measurement_002",
+    "Hepatic_measurement_003",
+    "Immune_measurement_001",
+    "Immune_measurement_002",
+    "Immune_measurement_003",
+    "Lungs_measurement_001",
+    "Lungs_measurement_002",
+    "Lungs_measurement_003",
+    "Metabolic_measurement_001",
+    "Metabolic_measurement_002",
+    "Metabolic_measurement_003",
+    "Renal_measurement_001",
+    "Renal_measurement_002",
+    "Renal_measurement_003",
+    "Brain_measurement_001",
+    "Brain_measurement_002",
+    "Brain_measurement_003",
+    "Cardiovascular_measurement_001",
+    "Cardiovascular_measurement_002",
+    "Cardiovascular_measurement_003",
+    "Cognitive_measurement_001",
+    "Cognitive_measurement_002",
+    "Cognitive_measurement_003",
+    "Mental_measurement_001",
+    "Mental_measurement_002",
+    "Mental_measurement_003"
+  ],
+  "feature_columns": [
+    "__model_Body_Sex",
+    "Body_measurement_001",
+    "Body_measurement_002",
+    "Body_measurement_003",
+    "__model_Hepatic_Sex",
+    "Hepatic_measurement_001",
+    "Hepatic_measurement_002",
+    "Hepatic_measurement_003",
+    "__model_Immune_Sex",
+    "Immune_measurement_001",
+    "Immune_measurement_002",
+    "Immune_measurement_003",
+    "__model_Lungs_Sex",
+    "Lungs_measurement_001",
+    "Lungs_measurement_002",
+    "Lungs_measurement_003",
+    "__model_Metabolic_Sex",
+    "Metabolic_measurement_001",
+    "Metabolic_measurement_002",
+    "Metabolic_measurement_003",
+    "__model_Renal_Sex",
+    "Renal_measurement_001",
+    "Renal_measurement_002",
+    "Renal_measurement_003",
+    "__model_Brain_Sex",
+    "Brain_measurement_001",
+    "Brain_measurement_002",
+    "Brain_measurement_003",
+    "__model_Cardiovascular_Sex",
+    "Cardiovascular_measurement_001",
+    "Cardiovascular_measurement_002",
+    "Cardiovascular_measurement_003",
+    "__model_Cognitive_Sex",
+    "Cognitive_measurement_001",
+    "Cognitive_measurement_002",
+    "Cognitive_measurement_003",
+    "__model_Mental_Sex",
+    "Mental_measurement_001",
+    "Mental_measurement_002",
+    "Mental_measurement_003"
+  ],
+  "organ_feature_map": {
+    "Body": [
+      "__model_Body_Sex",
+      "Body_measurement_001",
+      "Body_measurement_002",
+      "Body_measurement_003"
+    ],
+    "Hepatic": [
+      "__model_Hepatic_Sex",
+      "Hepatic_measurement_001",
+      "Hepatic_measurement_002",
+      "Hepatic_measurement_003"
+    ],
+    "Immune": [
+      "__model_Immune_Sex",
+      "Immune_measurement_001",
+      "Immune_measurement_002",
+      "Immune_measurement_003"
+    ],
+    "Lungs": [
+      "__model_Lungs_Sex",
+      "Lungs_measurement_001",
+      "Lungs_measurement_002",
+      "Lungs_measurement_003"
+    ],
+    "Metabolic": [
+      "__model_Metabolic_Sex",
+      "Metabolic_measurement_001",
+      "Metabolic_measurement_002",
+      "Metabolic_measurement_003"
+    ],
+    "Renal": [
+      "__model_Renal_Sex",
+      "Renal_measurement_001",
+      "Renal_measurement_002",
+      "Renal_measurement_003"
+    ],
+    "Brain": [
+      "__model_Brain_Sex",
+      "Brain_measurement_001",
+      "Brain_measurement_002",
+      "Brain_measurement_003"
+    ],
+    "Cardiovascular": [
+      "__model_Cardiovascular_Sex",
+      "Cardiovascular_measurement_001",
+      "Cardiovascular_measurement_002",
+      "Cardiovascular_measurement_003"
+    ],
+    "Cognitive": [
+      "__model_Cognitive_Sex",
+      "Cognitive_measurement_001",
+      "Cognitive_measurement_002",
+      "Cognitive_measurement_003"
+    ],
+    "Mental": [
+      "__model_Mental_Sex",
+      "Mental_measurement_001",
+      "Mental_measurement_002",
+      "Mental_measurement_003"
+    ]
+  },
+  "organ_feature_map_excluding_sex": {
+    "Body": [
+      "Body_measurement_001",
+      "Body_measurement_002",
+      "Body_measurement_003"
+    ],
+    "Hepatic": [
+      "Hepatic_measurement_001",
+      "Hepatic_measurement_002",
+      "Hepatic_measurement_003"
+    ],
+    "Immune": [
+      "Immune_measurement_001",
+      "Immune_measurement_002",
+      "Immune_measurement_003"
+    ],
+    "Lungs": [
+      "Lungs_measurement_001",
+      "Lungs_measurement_002",
+      "Lungs_measurement_003"
+    ],
+    "Metabolic": [
+      "Metabolic_measurement_001",
+      "Metabolic_measurement_002",
+      "Metabolic_measurement_003"
+    ],
+    "Renal": [
+      "Renal_measurement_001",
+      "Renal_measurement_002",
+      "Renal_measurement_003"
+    ],
+    "Brain": [
+      "Brain_measurement_001",
+      "Brain_measurement_002",
+      "Brain_measurement_003"
+    ],
+    "Cardiovascular": [
+      "Cardiovascular_measurement_001",
+      "Cardiovascular_measurement_002",
+      "Cardiovascular_measurement_003"
+    ],
+    "Cognitive": [
+      "Cognitive_measurement_001",
+      "Cognitive_measurement_002",
+      "Cognitive_measurement_003"
+    ],
+    "Mental": [
+      "Mental_measurement_001",
+      "Mental_measurement_002",
+      "Mental_measurement_003"
+    ]
+  },
+  "organ_offsets": {
+    "Body": [
+      0,
+      4
+    ],
+    "Hepatic": [
+      4,
+      8
+    ],
+    "Immune": [
+      8,
+      12
+    ],
+    "Lungs": [
+      12,
+      16
+    ],
+    "Metabolic": [
+      16,
+      20
+    ],
+    "Renal": [
+      20,
+      24
+    ],
+    "Brain": [
+      24,
+      28
+    ],
+    "Cardiovascular": [
+      28,
+      32
+    ],
+    "Cognitive": [
+      32,
+      36
+    ],
+    "Mental": [
+      36,
+      40
+    ]
+  },
+  "n_features_per_organ": {
+    "Body": 4,
+    "Hepatic": 4,
+    "Immune": 4,
+    "Lungs": 4,
+    "Metabolic": 4,
+    "Renal": 4,
+    "Brain": 4,
+    "Cardiovascular": 4,
+    "Cognitive": 4,
+    "Mental": 4
+  },
+  "n_features_per_organ_excluding_sex": {
+    "Body": 3,
+    "Hepatic": 3,
+    "Immune": 3,
+    "Lungs": 3,
+    "Metabolic": 3,
+    "Renal": 3,
+    "Brain": 3,
+    "Cardiovascular": 3,
+    "Cognitive": 3,
+    "Mental": 3
+  },
+  "n_measurement_features": 30,
+  "n_total_features": 40,
+  "sex_source_column": "Sex",
+  "sex_column_per_organ": {
+    "Body": "__model_Body_Sex",
+    "Hepatic": "__model_Hepatic_Sex",
+    "Immune": "__model_Immune_Sex",
+    "Lungs": "__model_Lungs_Sex",
+    "Metabolic": "__model_Metabolic_Sex",
+    "Renal": "__model_Renal_Sex",
+    "Brain": "__model_Brain_Sex",
+    "Cardiovascular": "__model_Cardiovascular_Sex",
+    "Cognitive": "__model_Cognitive_Sex",
+    "Mental": "__model_Mental_Sex"
+  },
+  "sex_column_indices_per_organ": {
+    "Body": 0,
+    "Hepatic": 4,
+    "Immune": 8,
+    "Lungs": 12,
+    "Metabolic": 16,
+    "Renal": 20,
+    "Brain": 24,
+    "Cardiovascular": 28,
+    "Cognitive": 32,
+    "Mental": 36
+  },
+  "metadata_columns": [
+    "Participant_ID",
+    "Sex",
+    "timepoint",
+    "timepoint_id",
+    "Age",
+    "Disease",
+    "is_healthy"
+  ],
+  "timepoint_id_map": {
+    "T0": 0,
+    "T2": 1
+  },
+  "n_timepoints": 2,
+  "organ_timepoint_availability": {
+    "Body": [
+      "T0",
+      "T2"
+    ],
+    "Hepatic": [
+      "T0",
+      "T2"
+    ],
+    "Immune": [
+      "T0",
+      "T2"
+    ],
+    "Lungs": [
+      "T0",
+      "T2"
+    ],
+    "Metabolic": [
+      "T0",
+      "T2"
+    ],
+    "Renal": [
+      "T0",
+      "T2"
+    ],
+    "Brain": [
+      "T0",
+      "T2"
+    ],
+    "Cardiovascular": [
+      "T0",
+      "T2"
+    ],
+    "Cognitive": [
+      "T0",
+      "T2"
+    ],
+    "Mental": [
+      "T0",
+      "T2"
+    ]
+  },
+  "filter_thresholds": {
+    "ssl": {
+      "organ_presence_threshold": 0.3,
+      "max_missing_fraction": 0.0,
+      "min_organs": 2,
+      "presence_excludes_sex": true
+    },
+    "finetune": {
+      "organ_presence_threshold": 0.5,
+      "max_missing_fraction": 0.0,
+      "min_organs": 2,
+      "presence_excludes_sex": true,
+      "healthy_only": true
+    }
+  },
+  "per_organ_effective_samples": {
+    "ssl": {
+      "Body": 105,
+      "Hepatic": 95,
+      "Immune": 103,
+      "Lungs": 102,
+      "Metabolic": 101,
+      "Renal": 102,
+      "Brain": 113,
+      "Cardiovascular": 97,
+      "Cognitive": 95,
+      "Mental": 105
+    },
+    "finetune": {
+      "Body": 36,
+      "Hepatic": 30,
+      "Immune": 41,
+      "Lungs": 30,
+      "Metabolic": 35,
+      "Renal": 35,
+      "Brain": 36,
+      "Cardiovascular": 38,
+      "Cognitive": 31,
+      "Mental": 35
+    }
+  },
+  "notes": {
+    "visit_representation": "T0 and T2 are independent sample rows.",
+    "sex_representation": "One sample-level Sex field is broadcast internally to organ blocks; broadcast columns are implementation slots, not independent features.",
+    "threshold_distinction": "max_missing_fraction defines the five preprocessing datasets; organ_presence_threshold is the fixed observed-feature ratio used inside the original SSL or fine-tuning loader."
+  }
+}
